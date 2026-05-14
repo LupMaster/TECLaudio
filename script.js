@@ -19,6 +19,8 @@ function speak(text) {
 
 function formatKey(key) {
   const map = {
+    "ContextMenu": "menu",
+    "Meta": "windows",
     " ": "espaço",
     "ArrowUp": "seta para cima",
     "ArrowDown": "seta para baixo",
