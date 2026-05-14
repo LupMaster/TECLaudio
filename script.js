@@ -40,7 +40,7 @@ function speak(text) {
   // Pequeno delay evita bugs do Chrome
   setTimeout(() => {
     speechSynthesis.speak(utterance);
-  }, 10);
+  }, 3);
 }
 
 function formatKey(key) {
@@ -56,7 +56,8 @@ function formatKey(key) {
     "Control": "control",
     "Alt": "alt",
     "Enter": "enter",
-    "Backspace": "backspace"
+    "Backspace": "backspace",
+    "'": "aspas simples"
   };
 
   return map[key] || key;
@@ -80,7 +81,7 @@ document.addEventListener("keydown", (event) => {
 
       setTimeout(() => {
         k.classList.remove("active");
-      }, 200);
+      }, 100);
     }
   });
 });
