@@ -52,6 +52,22 @@ h1 {
   transform: scale(1.1);
 }
 
+.enter {
+  min-width: 100px;
+}
+
+.arrows {
+  justify-content: center;
+}
+
+.key {
+  min-width: 45px;
+}
+
+.key.active {
+  background: orange;
+}
+
 /* Responsividade */
 @media (max-width: 768px) {
   .key {
