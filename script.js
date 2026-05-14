@@ -28,7 +28,7 @@ function speak(text) {
 
   const utterance = new SpeechSynthesisUtterance(text);
   utterance.lang = "pt-BR";
-  utterance.voice = voice;
+  utterance.voice = selectedVoice;
 
   utterance.rate = 1.3;   // mais rápido
   utterance.pitch = 1;
