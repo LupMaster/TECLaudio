@@ -9,20 +9,17 @@ function speak(text) {
 document.addEventListener("keydown", (event) => {
   event.preventDefault();
 
-  let key = event.key.toLowerCase();
+  const code = event.code;
+  const key = event.key;
 
-  output.textContent = `Tecla: ${event.key}`;
+  document.getElementById("output").textContent = `Tecla: ${key}`;
 
-  // Fala
-  speak(event.key);
+  speak(key);
 
-  // Destacar tecla
-  const keys = document.querySelectorAll(".key");
-
-  keys.forEach(k => {
+  document.querySelectorAll(".key").forEach(k => {
     k.classList.remove("active");
 
-    if (k.dataset.key.toLowerCase() === key) {
+    if (k.dataset.code === code) {
       k.classList.add("active");
 
       setTimeout(() => {
