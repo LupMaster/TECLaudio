@@ -5,14 +5,16 @@ let selectedVoice = null;
 function loadVoices() {
   voices = speechSynthesis.getVoices();
 
-  console.log("VOZES DISPONÍVEIS:");
-  voices.forEach(v => console.log(v.name, v.lang));
+  selectedVoice = voices.find(v =>
+    v.name.includes("Microsoft Maria") && v.lang === "pt-BR"
+  );
 
-  // Escolhe automaticamente a melhor pt-BR
-  selectedVoice =
-    voices.find(v => v.lang === "pt-BR" && v.name.toLowerCase().includes("google")) ||
-    voices.find(v => v.lang === "pt-BR") ||
-    voices.find(v => v.lang.startsWith("pt"));
+  // fallback (caso não encontre)
+  if (!selectedVoice) {
+    selectedVoice = voices.find(v => v.lang === "pt-BR");
+  }
+
+  console.log("Voz selecionada:", selectedVoice);
 }
 
 speechSynthesis.onvoiceschanged = loadVoices;
