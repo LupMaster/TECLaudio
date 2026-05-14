@@ -1,26 +1,22 @@
-# TECLaudio
-Este projeto é uma ferramenta de acessibilidade desenvolvida para auxiliar pessoas com deficiência visual ou baixa visão a aprenderem e praticarem o layout do teclado de computadores. Através da Web Speech API, o site fornece feedback auditivo instantâneo para cada tecla pressionada.
+# ⌨️ TECLaudio - Acessibilidade Web
 
-Como Funciona
-Ao acessar a plataforma, o usuário entra em um ambiente de exploração sensorial. Cada interação segue o fluxo abaixo:
-Captura de Eventos: O script monitora o pressionamento de teclas em tempo real.
-Feedback Visual: A tecla é exibida em tela cheia com alto contraste (fundo preto e texto amarelo) para atender usuários com baixa visão.
-Feedback Auditivo: O navegador utiliza síntese de voz em português (pt-BR) para anunciar o nome da tecla.
-Tecnologias Utilizadas
-Tecnologia
-Função
-HTML5
-Estruturação semântica da aplicação.
-CSS3
-Estilização com foco em alto contraste e design responsivo.
-JavaScript
-Lógica de captura de teclado e integração com a Web Speech API.
-GitHub Pages
-Hospedagem gratuita e deploy contínuo.
+Uma ferramenta de acessibilidade projetada para auxiliar pessoas com deficiência visual ou baixa visão a dominarem o layout do teclado. O site oferece um ambiente seguro para exploração tátil com feedback auditivo e visual imediato.
 
-Destaques de Acessibilidade
-Interface Minimalista: Sem distrações visuais, focando apenas no caractere atual.
-Tratamento de Teclas Especiais: Tradução de termos técnicos (ex: de "Space" para "Espaço").
-Sem Dependências: Funciona nativamente em qualquer navegador moderno sem necessidade de plugins.
-Este projeto é de código aberto e visa promover a inclusão digital através de ferramentas simples e eficazes.
+## 🚀 Funcionalidades
 
+*   **Feedback por Voz:** Utiliza a *Web Speech API* para anunciar cada tecla pressionada em português (pt-BR).
+*   **Alto Contraste:** Interface otimizada com fundo preto e caracteres em amarelo vibrante, facilitando a leitura para usuários com baixa visão.
+*   **Foco em Exploração:** Captura comandos globais do teclado para permitir que o usuário explore todas as teclas sem interferências acidentais do navegador.
+
+## 🛠️ Tecnologias
+
+| Tecnologia | Função |
+| :--- | :--- |
+| **HTML5** | Estruturação semântica e acessível. |
+| **CSS3** | Estilização em alto contraste e design responsivo. |
+| **JavaScript** | Lógica de captura de eventos e síntese de voz (Web Speech API). |
+| **GitHub Pages** | Hospedagem e entrega contínua do projeto. |
+
+## 💻 Como Rodar o Projeto
+
+Basta acessar a página hospedada em: URL
